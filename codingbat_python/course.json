@@ -1,0 +1,28 @@
+{
+  "lessons": [
+    {
+      "name": "Warmup1",
+      "task_list": [
+        {
+          "name": "SumDouble",
+          "task_files": {
+            "file1.py": {
+              "task_windows": [
+                {
+                  "line": 1,
+                  "start": 4,
+                  "hint": "lesson1task1file1_2",
+                  "possible_answer": "insert your code here",
+                  "length": 21
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "description": "Python exercises from CodingBat",
+  "name": "CodingBatPython",
+  "author": "relango"
+}
