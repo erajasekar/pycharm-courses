@@ -1,4 +1,12 @@
-from test_helper import run_common_tests, failed, passed, import_task_file
+from test_helper import run_common_tests, failed, passed, import_task_file, get_answer_placeholders
+
+def test_answer_placeholders():
+    placeholders = get_answer_placeholders()
+    placeholder = placeholders[0]
+    if len(placeholder) > 0:
+        passed()
+    else:
+        failed()
 
 def check_result(student_answer, answer, input_desc):
     if student_answer == answer:
@@ -8,6 +16,7 @@ def check_result(student_answer, answer, input_desc):
 
 if __name__ == '__main__':
     run_common_tests()
+    test_answer_placeholders()
     function = import_task_file().sum_double
     check_result(function(1,2), 3, "sum_double(1, 2) -> 3")
     check_result(function(3,2), 5, "sum_double(3, 2) -> 5")
